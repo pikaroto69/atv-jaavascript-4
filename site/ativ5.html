@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        var par = []
+        var impar = []
+        for (numero in num){
+            if(num[numero] % 2 == 1){
+                impar.push(num[numero])
+            }
+            else{
+                par.push(num[numero])
+            }
+        }
+        alert("Numeros: "+ num +"\nimpar: "+ impar + "\npar: " + par)
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var idades = []
+        var alturas = []
+        for ( i = 0; i < 5; i++) {
+            var idade = parseInt(prompt("Digite a idade da pessoa " + (i + 1) + ":"))
+            var altura = parseFloat(prompt("Insira a altura da pessoa " + (i + 1) + ":"))
+            idades.push(idade)
+            alturas.push(altura)
+        }
+        var r_idades = idades.reverse()
+        var r_alturas = alturas.reverse()
+        alert("Idades: " + r_idades + "\nAlturas:" + r_alturas)
+    </script>
+</body>
+</html>

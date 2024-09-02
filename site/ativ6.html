@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n_alunos = []
+        var m_alunos = []
+        var m_a_alunos = 0
+        for (i = 0; i < 2; i++) {
+            var notas = [];
+            for ( j = 0; j < 4; j++) {
+                var nota = parseFloat(prompt("Digite a nota " + (j + 1) + " do aluno " + (i + 1) + ":"))
+                notas.push(nota)
+            }
+            n_alunos.push(notas)
+        }
+        for ( i = 0; i < n_alunos.length; i++) {
+            var soma = 0;
+            var notas = n_alunos[i]
+            for ( j = 0; j < notas.length; j++) {
+                soma += notas[j]
+            }
+            var media = soma / notas.length
+            m_alunos.push(media)
+            if (media >= 7.0) {
+                m_a_alunos++
+            }
+        }
+        alert("Médias dos alunos: " + m_alunos.join(", ") + "\nNúmero de alunos com média maior ou igual a 7.0: " + m_a_alunos)
+    </script>
+</body>
+</html>
